@@ -1,0 +1,81 @@
+package interview;
+
+public class Lengthofstring {
+	static void factorial(int a) {
+		int factorial1 = 1;
+		for (int j = 1; j <= a; j++) {
+			factorial1 = factorial1 * j;
+
+		}
+		System.out.println("The factors of the " + a + " is :" + factorial1);
+	}
+
+	int Reverseno(int b) {
+		int reverse = 0;
+		int c = b;
+		System.out.println(b);
+		System.out.print("The reverse number is :");
+		if (b % 10 == 0) {
+			System.out.print("0");
+		}
+		while (c != 0) {
+			int mod = c % 10;
+			reverse = reverse * 10 + mod;
+			c = c / 10;
+
+		}
+		System.out.println(reverse);
+		return reverse;
+	}
+
+	public static int sumdivisibleby7(int abc, int pqr) {
+		
+		int i2 = abc;
+		System.out.println("jjjjjjjjjj");
+		while (i2 != pqr) {
+
+			if ((abc % 7) == 0) {
+			int	sum = sum + abc;
+				i2++;
+			} else {
+				i2++;
+			}
+		}
+
+		System.out.println("The sum of  nubers divisible by 7 in between" + abc + "-" + pqr + ":" + sum);
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		// 1. count of characters
+		String ab = "hey1234876hey";
+		System.out.println("The length of String is-:" + ab.length());
+		System.out.println("******************************************************");
+		// 2.String change from james to james is name
+		String a = "James";
+		String a1 = " is name";
+		System.out.println(a.concat(a1));
+		System.out.println(a + a1);
+		System.out.println("******************************************************");
+		// 3.Reverse string
+		String a2 = "Acceleration";
+		String rev = "";
+		for (int i = a2.length() - 1; i >= 0; i--) {
+			rev = rev + a2.charAt(i);
+		}
+		System.out.println("the reverse string is :" + rev);
+		System.out.println("******************************************************");
+		// 6.factorial of given number
+
+		Lengthofstring.factorial(10);
+
+		System.out.println("******************************************************");
+		// 7.Reverse a given no.
+		Lengthofstring ab1 = new Lengthofstring();
+		ab1.Reverseno(674590);
+		System.out.println("******************************************************");
+		// 8.sum number between 100 to200 divisible by 7
+		Lengthofstring.sumdivisibleby7(100, 200);
+	}
+
+}

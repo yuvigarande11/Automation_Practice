@@ -1,0 +1,14 @@
+package mouse;
+
+import Utility.SeleniumUtility;
+
+public class Mouse1 {
+
+	public static void main(String[] args) {
+		SeleniumUtility s1=new SeleniumUtility();
+		s1.setUp("Chrome", "http://demo.automationtesting.in/Register.html");
+		
+
+	}
+
+}

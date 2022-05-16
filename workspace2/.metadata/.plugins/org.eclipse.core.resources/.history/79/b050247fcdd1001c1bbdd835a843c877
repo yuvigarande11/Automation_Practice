@@ -1,0 +1,11 @@
+package Dropdown1;
+import org.openqa.selenium.By;
+import utilities.SeleniumUtility;
+public class DropDown2 {
+
+	public static void main(String[] args) {
+		
+		SeleniumUtility s1=new SeleniumUtility();
+	}
+
+}
